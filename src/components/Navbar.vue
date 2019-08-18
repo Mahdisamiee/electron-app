@@ -71,22 +71,13 @@ export default {
             items: [
                 { icon: 'mdi-home', text: 'خانه', route: '/' },
                 { icon: 'mdi-chart-line', text: 'داده ها', route: '/data' },
-                { icon: 'mdi-alarm-bell', text: 'دنبال کننده ها' },
+                { icon: 'mdi-email', text: 'پیام ها', route: '/message' },
                 { icon: 'mdi-magnify', text: 'منو تست', route: '/testing', subitems: [
-                                                                                        { icon: 'mdi-home', text: 'یه چی', route: '/' },
-                                                                                        { icon: 'mdi-chart-line', text: 'یه چی بی', route: '/data' },
-                                                                                        { icon: 'mdi-history', text: 'تاریخچه' },
-                                                                                        { icon: 'mdi-movie', text: 'نیزونم' },
+                                                                                        { icon: 'mdi-home', text: 'خانه', route: '/' },
+                                                                                        { icon: 'mdi-chart-line', text: 'something', route: '/data' },
+                                                                                        { icon: 'mdi-history', text: 'something else' },
                                                                                         ]},
-                { icon: 'mdi-history', text: 'تاریثخچه' },
-                { icon: 'mdi-movie', text: 'لیست پلی' },
-                { icon: 'mdi-clock', text: 'در صف تماشا' },
-                { icon: 'mdi-magnify', text: 'منو تست', route: '/testing', subitems: [
-                                                                                        { icon: 'mdi-home', text: 'یه چی', route: '/' },
-                                                                                        { icon: 'mdi-chart-line', text: 'یه چی بی', route: '/data' },
-                                                                                        { icon: 'mdi-history', text: 'تاریخچه' },
-                                                                                        { icon: 'mdi-movie', text: 'نیزونم' },
-                                                                                        ]},
+                
             ],
             value: null
         }

@@ -202,19 +202,19 @@
 </template>
 
 <script>
-import { clearInterval } from 'timers';
+import { clearInterval, setTimeout } from 'timers';
 export default {
     data(){
         return{
-            value1: 0,
-            value2: 0,
-            value3: 0,
-            value4: 0,
+            value1: 90,
+            value2: 60,
+            value3: 40,
+            value4: 20,
             values: [
-                {value : 0, id: 1, color: 'pink'},
-                {value : 0, id: 2, color: 'info'},
-                {value : 0, id: 3, color: 'orange'},
-                {value : 0, id: 4, color: 'teal'},
+                {value : 90, id: 1, color: 'pink'},
+                {value : 30, id: 2, color: 'info'},
+                {value : 40, id: 3, color: 'orange'},
+                {value : 60, id: 4, color: 'teal'},
             ],
             interval: {},
 
@@ -346,41 +346,7 @@ export default {
         clearInterval(this.interval)
     },
 
-    created(){
-        this.interval = setInterval(() => {
-            if(this.values[0].value >= 80){
-                //return this.value1 = 0;
-                // clearInterval(this.interval);
-            }
-            else{
-                this.values[0].value += 20;
-            }
-
-            if(this.values[1].value >= 60){
-                //return this.value1 = 0;
-                // clearInterval(this.interval);
-            }
-            else{
-                this.values[1].value += 10;
-            }
-
-            if(this.values[2].value >= 40){
-                //return this.value1 = 0;
-                // clearInterval(this.interval);
-            }
-            else{
-                this.values[2].value += 5;
-            }
-
-            if(this.values[3].value == 50){
-                //return this.value1 = 0;
-                clearInterval(this.interval);
-            }
-            else{
-                this.values[3].value += 10;
-            }
-        }, 100);
-    },
+    
     computed: {
         numberOfPages () {
             return Math.ceil(this.items.length / this.itemsPerPage)
